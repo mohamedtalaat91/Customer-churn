@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 
-data = pd.read_csv(r"E:\Epsilon AI\final_project\Deployment\source\churn.csv")
+data = pd.read_csv(r"Deployment/source/churn.csv")
 data = md.clean_data(data)
 data = md.treat_outliers(data)
 
