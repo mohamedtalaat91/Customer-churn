@@ -72,7 +72,7 @@ data.drop(['customerid' , 'churn'] , inplace = True ,axis = 1)
 import pickle
 
 # Load the saved pipeline
-with open(r'E:\Epsilon AI\final_project\Deployment\source\churn_model_pipeline.pkl', 'rb') as file:
+with open('Deployment/source/churn_model_pipeline.pkl', 'rb') as file:
     model_pipeline = pickle.load(file)
 
 
