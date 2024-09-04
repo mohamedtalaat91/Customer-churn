@@ -6,7 +6,7 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-data = pd.read_csv(r"E:\Epsilon AI\final_project\Deployment\source\cleaned_data.csv")
+data = pd.read_csv(r"Deployment/source/cleaned_data.csv")
 
 st.markdown("<h1 style='text-align: center;'>Customer Churn Prediction Page</h1>", unsafe_allow_html=True)
 st.markdown("<h5> ABOUT CHURN PREDICTION</h5>", unsafe_allow_html=True)
