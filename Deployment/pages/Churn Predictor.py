@@ -73,7 +73,7 @@ import pickle
 
 # Load the saved pipeline
 with open('Deployment/source/churn_model_pipeline.pkl', 'rb') as file:
-    model_pipeline = pickle.load(file)
+    model_pipeline = joblib.load(file)
 
 
 # Use the pipeline to make predictions
