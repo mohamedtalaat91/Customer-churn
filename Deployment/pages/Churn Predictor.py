@@ -72,8 +72,8 @@ data.drop(['customerid' , 'churn'] , inplace = True ,axis = 1)
 import pickle
 
 # Load the saved pipeline
-model_pipeline = joblib.load('Deployment/source/churn_model_pipeline.pkl')
-
+with open(r'Deployment/source/churn_model_pipeline.pkl', 'rb') as file:
+    model_pipeline = pickle.load(file)
 
 
 # Use the pipeline to make predictions
